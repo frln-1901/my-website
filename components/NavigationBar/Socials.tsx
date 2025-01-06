@@ -63,12 +63,12 @@ const Socials = () => {
 						<Link
 							aria-label='Github link of the website owner'
 							target='_blank'
-							href='https://github.com/uaenaaaa'>
+							href='https://github.com/froilanimnida'>
 							<Github />
 						</Link>
 					</TooltipTrigger>
 					<TooltipContent>
-						<p>@uaenaaaa</p>
+						<p>@froilanimnida</p>
 					</TooltipContent>
 				</Tooltip>
 
@@ -77,7 +77,7 @@ const Socials = () => {
 						<Link
 							aria-label='Instagram Profile of the website owner'
 							target='_blank'
-							href='https://www.instagram.com/uuaenaaa/'>
+							href='https://www.instagram.com/froilanimnida'>
 							<Instagram />
 						</Link>
 					</TooltipTrigger>
