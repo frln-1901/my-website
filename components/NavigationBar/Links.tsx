@@ -10,25 +10,26 @@ const Links = ({}) => {
 		return pathname === path;
 	};
 	return (
-		<div
-			className='
-      flex
-			h-fit
-			gap-3
-      flex-row'>
+		<div className='flex h-fit gap-3 flex-row'>
 			<Link
 				className={`${
-					ActiveLink('/about') ? 'font-bold text-primary' : 'font-medium'
+					ActiveLink('/about')
+						? 'font-bold text-primary'
+						: 'font-medium'
 				} text-sm md:text-base flex flex-col justify-center items-center`}
 				href='/about'>
 				About{' '}
 				<RxDotFilled
-					className={`${ActiveLink('/about') ? 'opacity-100' : 'opacity-0'}`}
+					className={`${
+						ActiveLink('/about') ? 'opacity-100' : 'opacity-0'
+					}`}
 				/>
 			</Link>
 			<Link
 				className={`${
-					ActiveLink('/expertise') ? 'font-bold text-primary' : 'font-medium'
+					ActiveLink('/expertise')
+						? 'font-bold text-primary'
+						: 'font-medium'
 				} text-sm md:text-base flex flex-col justify-center items-center`}
 				href='/expertise'>
 				Expertise{' '}
@@ -40,12 +41,16 @@ const Links = ({}) => {
 			</Link>
 			<Link
 				className={`${
-					ActiveLink('/contact') ? 'font-bold text-primary' : 'font-medium'
+					ActiveLink('/contact')
+						? 'font-bold text-primary'
+						: 'font-medium'
 				} text-sm md:text-base flex flex-col justify-center items-center`}
 				href='/contact'>
 				Contact{' '}
 				<RxDotFilled
-					className={`${ActiveLink('/contact') ? 'opacity-100' : 'opacity-0'}`}
+					className={`${
+						ActiveLink('/contact') ? 'opacity-100' : 'opacity-0'
+					}`}
 				/>
 			</Link>
 		</div>
