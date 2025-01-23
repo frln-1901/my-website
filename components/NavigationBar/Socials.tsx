@@ -82,7 +82,7 @@ const Socials = () => {
 						</Link>
 					</TooltipTrigger>
 					<TooltipContent>
-						<p>@uuaenaaa</p>
+						<p>@froilanimnida</p>
 					</TooltipContent>
 				</Tooltip>
 
