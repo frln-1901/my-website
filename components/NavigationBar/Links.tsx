@@ -41,6 +41,20 @@ const Links = ({}) => {
 			</Link>
 			<Link
 				className={`${
+					ActiveLink('/experience')
+						? 'font-bold text-primary'
+						: 'font-medium'
+				} text-sm md:text-base flex flex-col justify-center items-center`}
+				href='/experience'>
+				Experience{' '}
+				<RxDotFilled
+					className={`${
+						ActiveLink('/experience') ? 'opacity-100' : 'opacity-0'
+					}`}
+				/>
+			</Link>
+			<Link
+				className={`${
 					ActiveLink('/contact')
 						? 'font-bold text-primary'
 						: 'font-medium'

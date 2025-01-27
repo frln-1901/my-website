@@ -20,19 +20,8 @@ export default function Home() {
 	return (
 		<>
 			<div className='w-full flex justify-center flex-col items-center'>
-				<div
-					className='
-						w-[95%]
-						md:w-[90%]
-						lg:w-[80%]
-						xl:w-[75%]
-						gap-y-10
-						flex
-						pt-5
-						flex-col
-						items-center
-						justify-center'>
-					<div className='flex flex-col lg:flex-row-reverse gap-5 w-full md:w-[95%]'>
+				<div className='w-11/12 max-w-7xl gap-y-10 flex pt-5 flex-col items-center justify-center'>
+					<div className='flex flex-col lg:flex-row-reverse gap-5 w-full md:w-11/12'>
 						<div className='w-full flex justify-center relative items-center'>
 							<FaAndroid
 								size={125}
@@ -55,31 +44,15 @@ export default function Home() {
 								alt='Picture of the Developer'
 							/>
 						</div>
-						<div
-							className='
-								w-full
-								flex
-								flex-col
-								justify-center
-								relative
-								gap-10
-								items-left'>
-							<div
-								className='
-									w-3/4
-									flex
-									gap-3
-									justify-center
-									flex-col
-									items-left'>
+						<div className='w-full flex flex-col justify-center relative gap-10 items-left'>
+							<div className='w-3/4 flex gap-3 justify-center flex-col items-left'>
 								<Badge
 									variant={'secondary'}
 									className='w-fit font-semibold text-md'>
 									🐧 Filling in learning gaps
 								</Badge>
 								<h1 className='font-bold text-xl md:text-3xl'>
-									Annyeonghaseyo, Jeoneun Peurolan(Froilan)
-									imnida,
+									Hi! I am Froilan Aquino
 								</h1>
 								<p className='text-xs md:text-base'>
 									Software Developer Based In Caloocan
@@ -107,38 +80,13 @@ export default function Home() {
 							<NowPlayingWidget className='w-full max-w-xl' />
 						</div>
 					</div>
-					<div
-						className='
-							w-full
-							flex
-							flex-col
-							pb-3
-							items-center'>
-						<h1
-							className='
-								text-left
-								self-start
-								font-bold
-								text-3xl
-								lg:font-extrabold
-								md:text-2xl
-								lg:text-3xl
-								xl:text-5xl'>
+					<div className='w-full flex flex-col pb-3 items-center'>
+						<h1 className='text-left self-start font-bold text-3xl lg:font-extrabold md:text-2xl lg:text-3xl xl:text-5xl'>
 							Certifications & Badges
 						</h1>
 					</div>
 					<div
-						className='
-							w-full
-							grid
-							grid-cols-1
-							md:grid-cols-2
-							lg:grid-cols-3
-							gap-5
-							sm:gap-3
-							md:gap-10
-							lg:gap-20
-							'>
+						className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-3 md:gap-10 lg:gap-20'>
 						{certificationsListsPreview.map((cert, index) => {
 							return (
 								<Card key={index}>
